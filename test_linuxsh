@@ -1,0 +1,2 @@
+echo "Hello world"
+echo "build number is:" BUILD_NUMBER
