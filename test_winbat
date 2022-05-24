@@ -1,0 +1,5 @@
+cd C:\jenkins_agent\output
+date >> 1.txt
+time >> 1.txt
+echo "HELLO WORLD" >> 1.txt
+copy 1.txt C:\windows\temp
