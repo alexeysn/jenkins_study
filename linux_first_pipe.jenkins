@@ -21,7 +21,7 @@ properties([disableConcurentBuilds()])
       steps {
         sh "hostname"
         sh "sleep 10"
-        ls -la /
+        ls -la
       }
     }
   }
