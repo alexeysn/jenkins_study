@@ -17,6 +17,7 @@ pipeline {
         bat "echo 'HELLO WORLD' >> 1.txt"
         bat "@echo off"
         bat "echo %time%"
+        bat "ping 127.0.0.1 -n 6 > nul"
       }
     }
   }
