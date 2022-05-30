@@ -1,5 +1,5 @@
 pipeline {
-properties([disableConcurentBuilds()])
+options([disableConcurentBuilds()])
   agent {
     label 'LINUX'
       }
