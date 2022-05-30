@@ -20,7 +20,6 @@ pipeline {
     }
     stage ("3 step") {
       steps {
-        bat "dir"
         bat "sleep 10"
       }
     }
