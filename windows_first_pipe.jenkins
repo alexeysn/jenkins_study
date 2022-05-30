@@ -17,8 +17,6 @@ pipeline {
         bat "echo 'HELLO WORLD' >> 1.txt"
         bat "@echo off"
         bat "echo %time%"
-        bat "timeout 5 > NUL"
-        bat "echo %time%"
       }
     }
   }
