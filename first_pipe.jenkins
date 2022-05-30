@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    laber 'LINUX'
+    label 'LINUX'
       }
       options {
         timestamp()
