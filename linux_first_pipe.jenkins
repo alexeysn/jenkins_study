@@ -21,6 +21,7 @@ pipeline {
         sh "hostname"
         sh "sleep 10"
         sh "echo ifconfig"
+        sh "cat /etc/*release"
       }
     }
   }
