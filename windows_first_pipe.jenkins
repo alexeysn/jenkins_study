@@ -21,7 +21,6 @@ pipeline {
     stage ("3 step") {
       steps {
         bat "dir"
-        bat "copy 1.txt C:/windows/temp"
         bat "sleep 10"
       }
     }
