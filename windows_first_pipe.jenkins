@@ -1,0 +1,29 @@
+pipeline {
+properties([disableConcurentBuilds()])
+  agent {
+    label 'WINDOWS'
+      }
+      options {
+        timestamps()
+      }
+  stages {
+    stage ("Hello") {
+      steps {
+        sh "echo Hello world"
+      }
+    }
+    stage ("2 step") {
+      steps {
+        bat "cd C:\jenkins_agent\output"
+        bat "echo 'HELLO WORLD' >> 1.txt"
+        bat "sleep 10"
+      }
+    }
+    stage ("3 step") {
+      steps {
+        bat "copy 1.txt C:\windows\temp"
+        bat "sleep 10"
+      }
+    }
+  }
+}
