@@ -20,7 +20,7 @@ pipeline {
       steps {
         sh "hostname"
         sh "sleep 10"
-        sh "ping 127.0.0.1"
+        sh "echo ifconfig"
       }
     }
   }
