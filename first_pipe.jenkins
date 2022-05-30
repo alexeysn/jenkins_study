@@ -3,7 +3,7 @@ pipeline {
     label 'LINUX'
       }
       options {
-        timestamp()
+        timestamps()
       }
   stages {
     stage("Hello ") {
