@@ -9,7 +9,7 @@ properties([disableConcurentBuilds()])
   stages {
     stage ("Hello") {
       steps {
-        sh "echo Hello world"
+        bat "echo Hello world"
       }
     }
     stage ("2 step") {
