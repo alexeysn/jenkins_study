@@ -15,9 +15,10 @@ pipeline {
       steps {
         bat "cd C:/jenkins_agent/output"
         bat "echo 'HELLO WORLD' >> 1.txt"
+        bat "@echo off"
         bat "echo %time%"
-            "timeout 5 > NUL"
-            "echo %time%"
+        bat "timeout 5 > NUL"
+        bat "echo %time%"
       }
     }
   }
