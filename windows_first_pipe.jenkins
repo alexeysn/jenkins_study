@@ -16,7 +16,7 @@ pipeline {
         bat "cd C:/jenkins_agent/output"
         bat "echo 'HELLO WORLD' >> 1.txt"
         bat "@echo off"
-        bat "timeout 5"
+        bat timeout 5
         bat "echo %time%"
       }
     }
