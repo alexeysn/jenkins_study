@@ -18,10 +18,5 @@ pipeline {
         bat "sleep 10"
       }
     }
-    stage ("3 step") {
-      steps {
-        bat "sleep 10"
-      }
-    }
   }
 }
