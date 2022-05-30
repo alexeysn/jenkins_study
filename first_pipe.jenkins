@@ -11,5 +11,15 @@ pipeline {
         sh "echo Hello world"
       }
     }
+    stage ("2 step") {
+      steps {
+        sh "sleep 10"
+      }
+    }
+    stage ("3 step") {
+      steps {
+        sh "hostname"
+      }
+    }
   }
 }
