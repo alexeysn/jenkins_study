@@ -1,5 +1,4 @@
 pipeline {
-properties([disableConcurentBuilds()])
   agent {
     label 'WINDOWS'
       }
