@@ -18,8 +18,8 @@ pipeline {
     }
     stage ("3 step") {
       steps {
-        sh "hostname \
-            sleep 10"
+        sh "hostname"
+        sh "sleep 10"
       }
     }
   }
